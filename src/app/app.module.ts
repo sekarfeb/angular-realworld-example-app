@@ -16,6 +16,7 @@ import { ApiInterceptor } from "./core/interceptors/api.interceptor";
 export function initAuth(jwtService: JwtService, userService: UserService) {
   return () => (jwtService.getToken() ? userService.getCurrentUser() : EMPTY);
 }
+eeeew
 
 @NgModule({
   declarations: [AppComponent],
